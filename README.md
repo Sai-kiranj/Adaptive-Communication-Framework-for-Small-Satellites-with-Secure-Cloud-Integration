@@ -111,9 +111,7 @@ This project is open-source and free to use for **learning and academic purposes
 
 👨‍💻 Author
 
-Sai Kiran J
-Vishwas V
-Vaishanavi V
+Sai Kiran J | Vishwas V | Vaishanavi V
 Electronics & Communication Engineering
 ESP32 | IoT | Embedded Systems
 
