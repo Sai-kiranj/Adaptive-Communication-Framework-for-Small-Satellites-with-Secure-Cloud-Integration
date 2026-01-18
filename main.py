@@ -67,26 +67,26 @@ while True:
 
         # ----- Temperature Alert -----
         if temp > TEMP_THRESHOLD and not temp_alert_sent:
-            alert(f"🌡 Temp Alert! {temp}°C exceeded {TEMP_THRESHOLD}°C")
+            alert(f"Temp Alert! {temp}°C exceeded {TEMP_THRESHOLD}°C")
             temp_alert_sent = True
         elif temp <= TEMP_THRESHOLD and temp_alert_sent:
-            alert(f"✅ Temp back to normal: {temp}°C")
+            alert(f"Temp back to normal: {temp}°C")
             temp_alert_sent = False
 
         # ----- Humidity Alert -----
         if hum > HUM_THRESHOLD and not hum_alert_sent:
-            alert(f"💧 Humidity Alert! {hum}% exceeded {HUM_THRESHOLD}%")
+            alert(f"Humidity Alert! {hum}% exceeded {HUM_THRESHOLD}%")
             hum_alert_sent = True
         elif hum <= HUM_THRESHOLD and hum_alert_sent:
-            alert(f"✅ Humidity back to normal: {hum}%")
+            alert(f"Humidity back to normal: {hum}%")
             hum_alert_sent = False
 
         # ----- Gas Alert -----
         if gas > MQ135_THRESHOLD and not gas_alert_sent:
-            alert(f"⚠ Gas Alert! MQ135 ADC={gas} exceeded {MQ135_THRESHOLD}")
+            alert(f"Gas Alert! MQ135 ADC={gas} exceeded {MQ135_THRESHOLD}")
             gas_alert_sent = True
         elif gas <= MQ135_THRESHOLD and gas_alert_sent:
-            alert(f"✅ Gas level back to normal: MQ135 ADC={gas}")
+            alert(f"Gas level back to normal: MQ135 ADC={gas}")
             gas_alert_sent = False
 
         time.sleep(10)  # Delay between readings
